@@ -1,0 +1,46 @@
+/**
+ * Custom stylesheet for pascalvervest.nl
+ *
+ * Author: Pascal Vervest <pascalvervest@gmail.com>
+ */
+
+// Color definitions
+$black: #000000;
+$white: #ffffff;
+$darkGrey: #222222;
+$lightGrey: #cccccc;
+
+// Element definition
+$border: $black;
+$background: $darkGrey;
+$contentBackground: $lightGrey;
+
+body, html {
+    background-color: $background;
+}
+
+.callout.primary {
+    background: url('/images/header.png');
+    border: none;
+    border-bottom: 2px solid $border;
+    height: 200px;
+}
+
+h1 {
+    display: none;
+}
+
+.homeContent {
+    background-color: $contentBackground;
+    
+    padding-top: 15px;
+    margin-bottom: 15px;
+    
+    -webkit-border-radius: 0px 0px 5px 0px;
+    -moz-border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+a.readMore {
+    float: right;
+}
