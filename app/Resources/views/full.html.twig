@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="/assets/vendor/foundation-sites/dist/foundation.css">
+    <link rel="stylesheet" href="/assets/css/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="/assets/css/pascalvervest.css">
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+    <div class="callout large primary">
+        <div class="row column text-center">
+            <h1>pascalvervest.nl</h1>
+        </div>
+    </div>
+
+    <div class="row homeContent">
+        <div class="medium-6 columns medium-push-6">
+            <img class="thumbnail" src="http://placehold.it/750x350">
+        </div>
+        <div class="medium-6 columns medium-pull-6">
+            <h2>Oh hai!</h2>
+            <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</p>
+        </div>
+    </div>
+
+    <div class="row homeContent">
+        <div class="medium-4 columns">
+            <h3>Web development</h3>
+            <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+            <a class="readMore" href="#">read more...</a>
+        </div>
+        <div class="medium-4 columns">
+            <h3>Music</h3>
+            <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+            <a class="readMore" href="#">read more...</a>
+        </div>
+        <div class="medium-4 columns">
+            <h3>Gaming</h3>
+            <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+            <a class="readMore" href="#">read more...</a>
+        </div>
+    </div>
+
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>
