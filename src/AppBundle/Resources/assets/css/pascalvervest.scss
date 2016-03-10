@@ -10,12 +10,14 @@ $white: #ffffff;
 $darkGrey: #222222;
 $lightGrey: #cccccc;
 $greyish: #292c2f;
+$darkRed: #7f0025;
 
 // Element definition
 $border: $black;
 $background: $white;
 $contentBackground: $lightGrey;
 $footerBackground: $greyish;
+$linkColor: $darkRed;
 
 body, html {
     background-color: $background;
@@ -39,6 +41,12 @@ h1 {
 
 a.readMore {
     float: right;
+    border: none;
+    
+    &:after {
+        content: '\000BB';
+        margin-left: 5px;
+    }
 }
 
 .footer {
@@ -148,4 +156,24 @@ a.readMore {
   i {
     margin-right: 0.5rem;
   }
+}
+
+.content {
+    min-height: 300px;
+}
+
+a {
+    color: $linkColor;
+    border-bottom: dotted 1px $linkColor;
+    box-sizing: border-box;
+    
+    &:hover {
+        color: $linkColor;
+    }
+}
+
+.menu {
+    a {
+        border: none;
+    }
 }

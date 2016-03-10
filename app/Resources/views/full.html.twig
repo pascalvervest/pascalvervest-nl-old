@@ -17,69 +17,52 @@
             <h1>pascalvervest.nl</h1>
         </div>
     </div>
-
-    <div class="row homeContent">
-        <div class="medium-6 columns medium-push-6">
-{#            <img class="thumbnail" src="http://placehold.it/750x350">#}
-        </div>
-        <div class="medium-6 columns medium-pull-6">
-            <h2>Oh hai!</h2>
-            <p>Welcome to my little place on the interwebz! This site is mainly used as an online portfolio, and to play around with some new technologies. (Did I mention that this is build on the awesome <a target="_BLANK" href="https://symfony.com/">Symfony3</a> framework?)</p>
-            <p><small>And no, this thing is far from done, as is of course, tradition</small></p>
+    <div class="row">
+        <div class="medium-6 columns">
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/page/about">About me</a></li>
+                <li><a href="/page/contact">Contact</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="row homeContent">
-        <div class="medium-4 columns">
-            <h3>Web development</h3>
-            <p>Random stuff about my ventures into web/software development.</p>
-            <a class="readMore" href="#">read more...</a>
-        </div>
-        <div class="medium-4 columns">
-            <h3>Music</h3>
-            <p>I like music. A lot! I'm active in several bands, and do other stuff as well!</p>
-            <a class="readMore" href="#">read more...</a>
-        </div>
-        <div class="medium-4 columns">
-            <h3>Gaming</h3>
-            <p>If I'm not working, or doing something music-related, I spend a lot of times playing games, ranging from RPG's to simulations.</p>
-            <a class="readMore" href="#">read more...</a>
-        </div>
+    <div class="content">
+    {% block body %}{% endblock %}
     </div>
 
-
-    <footer class="footer">
-        <div class="row">
-            <div class="small-12 medium-6 large-5 columns">
-                <p class="logo"><i class="fi-shield"></i>pascalvervest.nl</p> 
-                <p class="footer-links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </p>
-            </div>
-            {#<div class="small-12 medium-6 large-4 columns">
-                <ul class="contact">
-                    <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
-                    <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
-                    <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
-                </ul>
-            </div>#}
-            <div class="small-12 medium-12 large-3 columns">
-                <p class="about">About Pascal Vervest</p>
-                <ul class="inline-list social">
-                    <a target="_BLANK" href="https://www.facebook.com/pascalvervest"><i class="fa fa-facebook-official"></i></a>
-                    <a target="_BLANK"  href="https://github.com/pascalvervest"><i class="fa fa-github"></i></a>
-                    <a target="_BLANK"  href="http://www.last.fm/user/lifeblind"><i class="fa fa-lastfm"></i></a>
-                    <a target="_BLANK"  href="https://twitter.com/pascalvervest"><i class="fa fa-twitter"></i></a>
-                    <a target="_BLANK"  href="https://nl.linkedin.com/in/pascalvervest"><i class="fa fa-linkedin"></i></a>
-                    
-                </ul>
-            </div>
+<footer class="footer">
+    <div class="row">
+        <div class="small-12 medium-6 large-5 columns">
+            <p class="logo"><i class="fi-shield"></i>pascalvervest.nl</p> 
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </p>
         </div>
-    </footer>
+        {#<div class="small-12 medium-6 large-4 columns">
+            <ul class="contact">
+                <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
+                <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
+                <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
+            </ul>
+        </div>#}
+        <div class="small-12 medium-12 large-3 columns">
+            <p class="about">About Pascal Vervest</p>
+            <ul class="inline-list social">
+                <a target="_BLANK" href="https://www.facebook.com/pascalvervest"><i class="fa fa-facebook-official"></i></a>
+                <a target="_BLANK"  href="https://github.com/pascalvervest"><i class="fa fa-github"></i></a>
+                <a target="_BLANK"  href="http://www.last.fm/user/lifeblind"><i class="fa fa-lastfm"></i></a>
+                <a target="_BLANK"  href="https://twitter.com/pascalvervest"><i class="fa fa-twitter"></i></a>
+                <a target="_BLANK"  href="https://nl.linkedin.com/in/pascalvervest"><i class="fa fa-linkedin"></i></a>
 
-{% block body %}{% endblock %}
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
 {% block javascripts %}{% endblock %}
 </body>
 </html>

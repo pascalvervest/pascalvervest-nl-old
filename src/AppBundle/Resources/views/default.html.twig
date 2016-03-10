@@ -1,1 +1,32 @@
 {% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="row homeContent">
+        <div class="medium-6 columns medium-push-6">
+            <img class="thumbnail" src="/images/pascal.png">
+        </div>
+        <div class="medium-6 columns medium-pull-6">
+            <h2>Oh hai!</h2>
+            <p>Welcome to my little place on the interwebz! This site is mainly used as an online portfolio, and to play around with some new technologies. (Did I mention that this is build on the awesome <a target="_BLANK" rel="external" href="https://symfony.com/">Symfony3</a> framework?)</p>
+            <p><small>And no, this thing is far from done, as is of course, tradition</small></p>
+        </div>
+    </div>
+
+    <div class="row homeContent">
+        <div class="medium-4 columns">
+            <h3>Web development</h3>
+            <p>Random stuff about my ventures into web/software development.</p>
+            <a class="readMore" href="/page/development">read more</a>
+        </div>
+        <div class="medium-4 columns">
+            <h3>Music</h3>
+            <p>I like music. A lot! I'm active in several bands, and do other stuff as well!</p>
+            <a class="readMore" href="/page/music">read more</a>
+        </div>
+        <div class="medium-4 columns">
+            <h3>Gaming</h3>
+            <p>If I'm not working, or doing something music-related, I spend a lot of times playing games, ranging from RPG's to simulations.</p>
+            <a class="readMore" href="/page/gaming">read more</a>
+        </div>
+    </div>
+{% endblock %}
