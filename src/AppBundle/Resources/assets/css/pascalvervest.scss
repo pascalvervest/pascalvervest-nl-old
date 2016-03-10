@@ -68,6 +68,7 @@ a.readMore {
     text-align: center;
     line-height: 35px;
     margin: 0 3px 0 0;
+    border: none;
   }
   
   .contact {
@@ -116,6 +117,7 @@ a.readMore {
     padding: 3rem 0 2rem;
     margin: 0;
     font-size: 0.875rem;
+    border: none;
     
     &::after {
       content: "•";
@@ -167,8 +169,15 @@ a {
     border-bottom: dotted 1px $linkColor;
     box-sizing: border-box;
     
-    &:hover {
+    &:hover, &:active, &:visited {
         color: $linkColor;
+    }
+}
+
+a[rel~="external"] {
+    &:after {
+        content: '\027A5';
+        margin-left: 5px;
     }
 }
 
