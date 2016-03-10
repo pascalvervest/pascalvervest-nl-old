@@ -23,6 +23,15 @@ body, html {
     background-color: $background;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Limelight';
+    font-weight: bold;
+}
+
+p, a {
+    font-family: 'Comfortaa', light;
+}
+
 .callout.primary {
     background: url('/images/header.png');
     border: none;
